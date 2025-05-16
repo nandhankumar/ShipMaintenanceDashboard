@@ -41,9 +41,9 @@ A comprehensive web application for managing ship maintenance operations, built 
 ## Technologies Used
 
 - **Frontend**
-  - React 18
+  - React 
   - TypeScript
-  - Vite (build tool)
+  - Vite 
   - CSS Modules
   - LocalStorage (for data persistence)
 
@@ -51,8 +51,12 @@ A comprehensive web application for managing ship maintenance operations, built 
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/nandhankumar/ShipMaintenanceDashboard
+   npx create-react-app entnt-ship-maintenance --template typescript
    cd ship-maintenance-dashboard
+   npm install
+   npm run dev
+   
 
 
 

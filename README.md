@@ -1,54 +1,59 @@
+# Ship Maintenance Dashboard
+
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite.
 
-Currently, two official plugins are available:
+A comprehensive web application for managing ship maintenance operations, built with React, TypeScript, and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User Authentication**
+  - Admin, Inspector, and Engineer roles
+  - Secure login/logout functionality
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Ship Management**
+  - Add, edit, and delete ships
+  - View ship details and components
+  - Track ship status (Active, Under Maintenance, Inactive)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Maintenance Jobs**
+  - Create and manage maintenance jobs
+  - Assign jobs to engineers
+  - Track job status (Open, In Progress, Completed, Cancelled)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Components Tracking**
+  - Manage ship components with installation dates
+  - Track last maintenance dates
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Calendar View**
+  - Visual schedule of maintenance jobs
+  - Day-by-day job overview
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Notifications System**
+  - System alerts and updates
+  - Mark as read/dismiss functionality
+
+- **Dashboard**
+  - Key performance indicators (KPIs)
+  - Recent jobs overview
+
+## Technologies Used
+
+- **Frontend**
+  - React 18
+  - TypeScript
+  - Vite (build tool)
+  - CSS Modules
+  - LocalStorage (for data persistence)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone 
+   cd ship-maintenance-dashboard
+
+
+
+
